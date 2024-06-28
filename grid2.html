@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-size: 1em;
+        }
+        .container {
+            display: grid;
+            height: 100vh;
+            grid-template-columns: 1fr 4fr 1fr;
+            grid-template-rows: 80px auto 80px;
+
+            grid-template-areas:"baslik baslik aside"
+                                "nav content aside"
+                                "bitis bitis bitis"
+        }
+        header, nav, main, aside, footer {
+            background-color: blueviolet;
+            color: #fff;
+            border: 1px solid blue; 
+        }
+        header{
+            /* grid-column: 1/ span 3; */
+            grid-area: baslik;
+        }
+        nav{
+            grid-area: nav;
+        }
+        main{
+            grid-area: content;
+        }
+        aside {
+            grid-area: aside;
+        }
+        footer {
+            /* grid-column: 1 / span 3; */
+            grid-area: bitis;
+        }
+        @media(max-width:800px){
+            .container {
+                grid-template-columns: 1fr;
+                grid-template-rows: 80px 80px 1fr 80px 80px;
+                grid-template-areas:"baslik" 
+                                    "nav" 
+                                    "content" 
+                                    "aside" 
+                                    "bitis";
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>Header</header>
+        <nav>Menü</nav>
+        <main>Content</main>
+        <aside>Sidebar</aside>
+        <footer>Footer</footer>
+    </div>
+</body>
+</html>

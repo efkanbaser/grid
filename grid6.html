@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: grid;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            height: 100vh;
+        }
+        h1, h2, h3, footer{
+            color: white;
+        }
+        nav ul{
+            list-style: none;
+        }
+        nav ul{
+            /* Bununla başlık ve linkleri tam ortalıyorsun */
+            padding: 0;
+        }
+        a{
+            text-decoration: none;
+            color: aqua;
+            padding: 10px;
+        }
+        a:hover{
+            background-color: aqua;
+            color: black;
+            border-radius: 10px;
+        }
+        header, footer{
+            padding: 1rem;
+            background-color: gray;
+            text-align: center;
+        }
+        footer{
+            padding: 1px;
+        }
+        .main{
+            padding: 2rem;
+        }
+        .featured{
+            border-radius: 8px;
+            background-color: silver;
+            margin-bottom: 2rem;
+            padding: 2rem;
+            box-shadow: 0 2px 5px 5px rgba(0, 0, 0, 0.5);
+        }
+        .posts{
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+            gap: 2rem;
+        }
+        .post{
+            background-color: silver;
+            padding: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px 5px rgba(0, 0, 0, 0.5);
+        }
+        article a{
+            padding-left: 0;
+        }
+        article a:hover{
+            padding-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header class="site-header">
+        <h1>Blog Sitesi</h1>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#">Ana Sayfa</a>
+                    <a href="#">Ana Sayfa</a>
+                    <a href="#">Ana Sayfa</a>
+                    <a href="#">Ana Sayfa</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main">
+        <section class="featured">
+            <h2>Öne Çıkan Yazı</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores error cumque dicta cupiditate nobis explicabo voluptas, enim qui recusandae dolorum temporibus porro architecto dignissimos saepe id dolor sit, vel sint facere! Saepe, ratione! Explicabo ipsam mollitia nam recusandae placeat officiis nisi suscipit aperiam sed. Reiciendis dolores explicabo fuga exercitationem aliquam.</p>
+        </section>
+        <section class="posts">
+            <article class="post">
+                <h3>Yazı Başlığı 1</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic minima atque aut voluptates quidem, assumenda natus esse aperiam perferendis! Reiciendis harum nesciunt quidem placeat fugit, vitae consectetur perspiciatis. Ut eligendi officiis delectus quis soluta, veniam magni. Possimus nisi dolores expedita itaque temporibus adipisci nemo earum quos quod, obcaecati, aliquam nam?</p>
+                <a href="#">Devamını oku</a>
+            </article>
+            <article class="post">
+                <h3>Yazı Başlığı 2</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt facilis sequi enim, dolorem obcaecati modi accusantium in perspiciatis eum ducimus perferendis aperiam cum natus accusamus alias voluptatum illo. Quos repellat quis illo porro vel. Rem excepturi sunt aliquam non animi, maxime quaerat numquam dicta natus asperiores nostrum dolore eligendi ab!</p>
+                <a href="#">Devamını oku</a>
+            </article>
+            <article class="post">
+                <h3>Yazı Başlığı 3</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur quas amet labore, eligendi in velit excepturi perspiciatis odio. Voluptas eum nam id illum reiciendis ex accusamus soluta perspiciatis quidem, magnam repellendus esse incidunt iure odio totam ducimus corrupti eius sapiente dicta veniam iste? Aut est unde perspiciatis ipsam illum veritatis.</p>
+                <a href="#">Devamını oku</a>
+            </article>
+            <article class="post">
+                <h3>Yazı Başlığı 4</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis voluptatem illum nesciunt exercitationem quis assumenda dolore deleniti repudiandae soluta reprehenderit dolorem facere amet sapiente temporibus esse ea, sunt dolorum! Distinctio, amet suscipit? Praesentium odit doloremque est dolor, dolorum commodi voluptatum. Odio excepturi, aspernatur quod debitis illo velit eaque vitae rem?</p>
+                <a href="#">Devamını oku</a>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>&copy;Tüm hakları saklıdır</p>
+    </footer>
+</body>
+</html>
